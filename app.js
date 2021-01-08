@@ -11,11 +11,6 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"))
 app.set("view engine", "ejs");
 
-// mongoose.connect("mongodb://localhost:27017/BankDB", {
-//     useNewUrlParser: true,
-//     useUnifiedTopology: true,
-//     useFindAndModify: false
-// });
 
 mongoose.connect("mongodb+srv://harshad:harshad@cluster0.9nhrp.mongodb.net/bank?retryWrites=true&w=majority", {
     useNewUrlParser: true,
@@ -138,9 +133,9 @@ app.get("/invalid-search",function(req,res){
 app.post("/searchUser",function(req,res){
     const searchedUser = req.body.user;
     User.find({name:searchedUser},function(err,foundUsers){
-        // console.log(foundUsers.length);
+       
         if(foundUsers.length===0){
-            // alert("no user found");
+            
             res.redirect("/invalid-search");
         }
         else{
@@ -218,7 +213,7 @@ app.post("/success", function (req, res) {
     User.findOne({
         name: from
     }, function (err, sender) {
-        // console.log(sender.name + " sender Money " + sender.balance);
+        
         updateSenderBalace(sender.balance - amount);
     });
 
@@ -248,14 +243,14 @@ app.post("/success", function (req, res) {
         }, {
             new: true
         }, function (err, sender) {
-            // console.log(sender);
+            
         });
     }
 
     User.findOne({
         name: to
     }, function (err, receiver) {
-        // console.log(receiver.name + " receiver Money " + receiver.balance);
+        
         updateReceiverBalance(receiver.balance + amount);
     });
 
@@ -284,7 +279,7 @@ app.post("/success", function (req, res) {
         }, {
             new: true
         }, function (err, receiver) {
-            // console.log(receiver);
+           
         });
     }
 
