@@ -111,10 +111,10 @@ form[action="/success"] .center {
 }
 
 .transferMoney{
-    color: #0c056d;
+    color: #000000;
     font-size: 2rem;
     font-weight: bold;
-    text-shadow: 0px 0px 5px white,0px 0px 3px red,0px 0px 10px black;
+    
 }
 
 .transfer-money-form{
@@ -149,14 +149,14 @@ form[action="/success"] .center {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 150px;
-    background-color:#8b9de6;
-    color: #0c056d;
+    background-color:pink;
+    color: #000000;
     font-weight: bold;
     font-size: 1.2rem;
     padding: 5px 0px 5px 0px;
-    border: solid 2px rgb(16, 30, 231);
+    border: solid 1px rgb(231, 84, 16);
     border-radius: 10px;
-    text-shadow: 0px 0px 3px black,0px 0px 10px white,0px 0px 5px darkblue;
+    
 
 }
 
@@ -219,8 +219,8 @@ form[action="/success"] .center {
 .oops{
     padding-top: 40px;
     padding-bottom: 25px;
-    background-color: rgb(250, 248, 248);
-    box-shadow: 0px 1px 20px black;
+    background-color:white;
+   
     margin-bottom: 70px;
 }
 
@@ -323,7 +323,7 @@ color: black;
 
 .userImage{
     border-radius: 50%;
-    box-shadow: 0px 0px 20px rgb(165, 102, 173);
+    
     width: 250px;
     height: 250px;
     margin-bottom: 50px;
@@ -340,16 +340,16 @@ color: black;
 }
 
 .user-history-heading{
-    color: #0c056d;
-    font-size: 2.5rem;
+    color: #000000;
+    font-size: 1.5rem;
     margin-bottom: 40px;
     font-weight: bold;
-    text-shadow: 0px 0px 15px blue;
+    
 }
 
 #user-history-table{
     margin-bottom: 100px;
-    box-shadow: 0px 0px 20px black;
+    
 }
 
 
@@ -357,7 +357,7 @@ color: black;
 
 #history-table{
     margin-bottom: 100px;
-    box-shadow: 0px 0px 20px black;
+    
 }
 
 
@@ -365,7 +365,7 @@ color: black;
 
 .success{
     background-color: rgb(240, 231, 231);
-    box-shadow: 0px 1px 20px black;
+    
     margin-bottom: 80px;
     margin-top: 90px;
 }
@@ -424,7 +424,7 @@ color: black;
     color: rgb(82, 77, 77);
     background-color: rgb(228, 218, 218);
     text-align: center;
-    box-shadow: 0px 1px 20px black;
+    
 }
 
 .text:first-child {
