@@ -7,28 +7,26 @@ body{
     height: 100%;
     letter-spacing:1px;
     font-family: OpenSans, Arial, Helvetica, sans-serif;
-    background-color: #eeeeee;
-    background-image: linear-gradient(90deg,#98acf8,#bbbbbb,#98acf8);
-    flex-direction: column;
+    background-color:white;
+    
 }
 
 hr{
     height: 3px;
-    background-color: lightgray;
+    background-color: white;
     border: none;
 }
 
 
 button{
     border:none;
-    /* padding: 0; */
+    
 }
 
 p{
     margin: 0;
 }
 
-/* navigation-bar */
 
 .navbar{
     position: relative;
@@ -63,7 +61,6 @@ p{
 }
 
 
-/* form */
 
 .balance-display{
     font-weight: bold;
@@ -126,23 +123,22 @@ form[action="/success"] .center {
 }
 
 
-/* button */
 
 .user-history-button , .transferMoney-button {
     margin-bottom: 30px;
     width: 260px;
-    background-color:#8b9de6;
-    color: #0c056d;
+    background-color:pink;
+    color:black;
     font-weight: bold;
     font-size: 1.2rem;
     padding: 5px 0px 5px 0px;
-    border: solid 2px rgb(16, 30, 231);
-    border-radius: 10px;
+    border: solid 1px rgb(231, 77, 16);
+    
 }
 
 .user-history-button:hover , .transferMoney-button:hover {
-    background-color: rgb(59, 181, 252);
-    text-shadow: 0px 0px 10px rgb(139, 106, 106);
+    background-color: rgb(252, 191, 59);
+   
 }
 
 .user-history-button{
@@ -176,12 +172,11 @@ form[action="/success"] .center {
  
 .view-button {
     border-radius: 10px;
-    background-color: #372be0;
+    background-color: #ffffff;
 }
 
 
 
-/* Bank */
 
 .wrapper{
     padding-top: 20px;
@@ -220,7 +215,6 @@ form[action="/success"] .center {
 
 
 
-/* invalid-search */
 
 .oops{
     padding-top: 40px;
@@ -244,55 +238,55 @@ form[action="/success"] .center {
     font-size: 1.5rem;
 }
 
-/* Table,users,user */
+
 
 #users-table{
-    box-shadow: 0px 0px 20px black;
+    
     margin-bottom: 100px;
 }
 .table thead {
-    background-color: rgb(60, 62, 197);
-    color:#0c056d ;
+    background-color: rgb(255, 255, 255);
+    color:#000000 ;
 }
 
 .table thead th{
-    border-bottom: solid 2px #0c056d;
+    border-bottom: solid 2px #000000;
 }
 
 .table-bordered td,.table-bordered th{
-    border: solid 2px #0c056d;
+    border: solid 2px #000000;
 }
 
 .table tbody {
-    color: #2b20ca;
+    color: #000000;
     font-weight: 600;
 }
 
 .table tbody tr:nth-child(even) {
-background-color: #98acf8;
+background-color: white;
 }
 .table tbody tr:nth-child(odd) {
-    background-color: #8794c9;
+    background-color: #ffffff;
 }
 
 .users-icon{
     height: 60px;
     width: 60px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 15px blue;
+    
+    box-shadow: 0px 0px 15px pink;
     margin-bottom: 10px;
 }
 .all-users{
-    color: #0c056d;
+    color:black;
     font-size: 2.5rem;
     margin-bottom: 40px;
     font-weight: bold;
-    text-shadow: 0px 0px 15px blue;
+   
 }
 
 
 
-/* Footer */
+
 
 .footer-link-bar{
     padding-top: 25px;
@@ -300,10 +294,10 @@ background-color: #98acf8;
     min-width: 100%;
 }
 
-/* user-profile */
+
 
 #user-table{
-    box-shadow: 0px 0px 20px black;
+   
     margin-bottom: 40px;
 }
 
@@ -313,11 +307,11 @@ background-color: #98acf8;
 }
 
 .user-profile-heading{
-    color: #0c056d;
+    color: black;
     font-size: 2.5rem;
     margin-bottom: 40px;
     font-weight: bold;
-    text-shadow: 0px 0px 15px blue;
+    
 }
 .user-profile-data-heading{
 color: black;
@@ -336,7 +330,7 @@ color: black;
 }
 
 
-/* user-history */
+
 
 .positive{
     color: darkgreen;
@@ -359,14 +353,14 @@ color: black;
 }
 
 
-/* History */
+
 
 #history-table{
     margin-bottom: 100px;
     box-shadow: 0px 0px 20px black;
 }
 
-/* Success */
+
 
 
 .success{
@@ -412,7 +406,6 @@ color: black;
 
 
 
-/* other-details */
 
 .other-details{
     margin-bottom: 60px;

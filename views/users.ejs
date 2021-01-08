@@ -1,15 +1,15 @@
 <%- include("header") -%>
 
-<!-- Table -->
-<div class="all-users center col-md-8 mx-md-auto"><img class="users-icon" src="/images/users.jpg" alt=""></img> USERS</div>
+
+<div class="all-users center col-md-8 mx-md-auto"><img class="users-icon" src="/images/users.png" alt=""></img><br>USERS</div>
 
 <div class=" col-md-8 center m-auto">
     <table class="table table-bordered table-responsive-sm table-hover" id="users-table">
         <thead>
-            <th class="th">#</th>
+            <th class="th">SR NO.</th>
             <th class="th">NAME</th>
             <th class="th">EMAIL</th>
-            <th class="th">VIEW PROFILE</th>
+            <th class="th">PROFILE</th>
         </thead>
 
         <tbody>
@@ -26,7 +26,7 @@
                 <td class="td">
                     <form action="/user" method="POST">
                         <button class="view-button" type="submit" name="user" value="<%= currentUser %>">
-                            <i class="far fa-eye"></i>
+                            <a>view</a>
                         </button>
                     </form>
                 </td>
