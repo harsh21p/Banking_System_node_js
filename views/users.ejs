@@ -1,0 +1,39 @@
+<%- include("header") -%>
+
+<!-- Table -->
+<div class="all-users center col-md-8 mx-md-auto"><img class="users-icon" src="/images/users.jpg" alt=""></img> USERS</div>
+
+<div class=" col-md-8 center m-auto">
+    <table class="table table-bordered table-responsive-sm table-hover" id="users-table">
+        <thead>
+            <th class="th">#</th>
+            <th class="th">NAME</th>
+            <th class="th">EMAIL</th>
+            <th class="th">VIEW PROFILE</th>
+        </thead>
+
+        <tbody>
+            <% users.forEach(function(user,index){%>
+            <tr>
+                <td class="td" scope="row"><%= index+1 %></td>
+                <td class="td">
+                    <%= user.name %>
+                </td>
+                <td class="td">
+                    <%= user.email %>
+                </td>
+                <%let currentUser = JSON.stringify(user);%>
+                <td class="td">
+                    <form action="/user" method="POST">
+                        <button class="view-button" type="submit" name="user" value="<%= currentUser %>">
+                            <i class="far fa-eye"></i>
+                        </button>
+                    </form>
+                </td>
+            </tr>
+            <%  });%>
+        </tbody>
+    </table>
+</div>
+
+<%- include("footer") -%>

@@ -1,0 +1,70 @@
+<%- include("header") -%>
+
+<% if(history.length===0){ %>
+<div class="col-md-5 mx-auto other-details">
+    <div class="text">
+        <h1 class="user-history-heading" style="color: darkblue;margin-bottom: 30px; font-size: 1.6rem;">
+            No History Found
+        </h1>
+        <h1 style="line-height: 1.5; font-size: 1.3rem;">
+            You have not made any transaction yet
+        </h1>
+    </div>
+</div>
+<% }else{ %>
+
+
+<h1 class="center col-md-8 user-history-heading mx-auto">
+    ALL TRANSACTION
+</h1>
+
+<div class="center col-sm-8 mx-auto">
+    <table class="table  table-responsive-md table-bordered table-hover" id="history-table">
+        <thead>
+            <tr>
+                <th>From</th>
+                <th>To</th>
+                <th>Amount Transfered (Rs)</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+
+        <%let size = history.length;%>
+        <%for(let i=size-1; i>=0;i--){%>
+
+        <%  let currentHistory = history[i];%>
+        <%let day = currentHistory.day;%>
+        <%if(day<10){%>
+        <%  day = "0"+ day;%>
+        <%}%>
+<%let month = currentHistory.month;%>
+        <%if(month<10){%>
+        <%month = "0"+ month;%>
+        <%}%>
+<%let hour = currentHistory.hour;%>
+        <%if(hour<10){%>
+        <%hour = "0"+ hour;%>
+        <%}%>
+<%let minute = currentHistory.minute;%>
+        <%if(minute<10){%>
+        <%minute = "0"+ minute;%>
+        <%}%>
+   
+<%let time = day+"/"+month+"/"+currentHistory.year+"  "+hour+":"+minute;%>
+
+        <tbody>
+
+            <tr>
+                <td>
+                    <%=currentHistory.From%>
+                </td>
+                <td><%=currentHistory.To%></td>
+                <td><%=currentHistory.amountExchange%></td>
+                <td><%=time%></td>
+            </tr>
+        </tbody>
+        <%}%>
+    </table>
+</div>
+    <%}%>
+        <%- include("footer") -%>

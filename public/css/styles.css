@@ -1,0 +1,462 @@
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    letter-spacing:1px;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+    background-image: linear-gradient(90deg,#98acf8,#bbbbbb,#98acf8);
+    flex-direction: column;
+}
+
+hr{
+    height: 3px;
+    background-color: lightgray;
+    border: none;
+}
+
+
+button{
+    border:none;
+    /* padding: 0; */
+}
+
+p{
+    margin: 0;
+}
+
+/* navigation-bar */
+
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.bank-icon{
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+
+}
+
+.center{
+    text-align: center;
+}
+
+.dark-color{
+    background-color: #0c056d;
+}
+.menu-bar{
+    color: #007bff;
+}
+
+.navbar-brand{
+    font-weight: 700;
+}
+
+.nav-item{
+    opacity: 0.5;
+    font-weight: 600;
+}
+
+
+/* form */
+
+.balance-display{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #393e46;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.fontSizeOneAndHalf{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.form-group{
+    border-top: solid 2px lightgrey;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #393e46;
+}
+
+form[action="/success"] .center {
+    border-top: solid 2px lightgray;
+}
+
+.form-input-background{
+    background-color: #f4eeff;
+}
+
+
+.search-icon{
+    background: none;
+	color: inherit;
+	border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font: inherit;
+    background-color: grey;
+	cursor: pointer;
+    outline: inherit;
+}
+.search-form{
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.transferMoney{
+    color: #0c056d;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px white,0px 0px 3px red,0px 0px 10px black;
+}
+
+.transfer-money-form{
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+
+/* button */
+
+.user-history-button , .transferMoney-button {
+    margin-bottom: 30px;
+    width: 260px;
+    background-color:#8b9de6;
+    color: #0c056d;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px 0px 5px 0px;
+    border: solid 2px rgb(16, 30, 231);
+    border-radius: 10px;
+}
+
+.user-history-button:hover , .transferMoney-button:hover {
+    background-color: rgb(59, 181, 252);
+    text-shadow: 0px 0px 10px rgb(139, 106, 106);
+}
+
+.user-history-button{
+    margin-bottom: 100px;
+}
+
+.form-submit-btn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 150px;
+    background-color:#8b9de6;
+    color: #0c056d;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 5px 0px 5px 0px;
+    border: solid 2px rgb(16, 30, 231);
+    border-radius: 10px;
+    text-shadow: 0px 0px 3px black,0px 0px 10px white,0px 0px 5px darkblue;
+
+}
+
+.form-submit-btn:hover {  
+    background-color: rgb(59, 181, 252);
+    text-shadow: 0px 0px 10px rgb(139, 106, 106);
+}
+
+.fa-eye{
+    color: lightgrey;
+}
+
+ 
+.view-button {
+    border-radius: 10px;
+    background-color: #372be0;
+}
+
+
+
+/* Bank */
+
+.wrapper{
+    padding-top: 20px;
+    overflow: hidden;
+}
+
+.nested-wrapper{
+    padding: 100px 0px;
+    background-color: rgb(10, 156, 241);
+    transform: skew(0deg,-15deg);
+    text-align: center;
+}
+.content{
+    transform: skew(0deg,15deg);
+    color: white;
+}
+
+.bank-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    margin: 30px 0px;
+}
+
+.content p, .content h1 {
+    margin: 20px 0px;
+}
+
+.content h1{
+    font-weight: bold;
+}
+.content p {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* invalid-search */
+
+.oops{
+    padding-top: 40px;
+    padding-bottom: 25px;
+    background-color: rgb(250, 248, 248);
+    box-shadow: 0px 1px 20px black;
+    margin-bottom: 70px;
+}
+
+.oops img {
+    opacity: 0.6;
+    border-radius: 60px;
+    margin-bottom: 20px;
+}
+
+.oops p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(82, 80, 80);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Table,users,user */
+
+#users-table{
+    box-shadow: 0px 0px 20px black;
+    margin-bottom: 100px;
+}
+.table thead {
+    background-color: rgb(60, 62, 197);
+    color:#0c056d ;
+}
+
+.table thead th{
+    border-bottom: solid 2px #0c056d;
+}
+
+.table-bordered td,.table-bordered th{
+    border: solid 2px #0c056d;
+}
+
+.table tbody {
+    color: #2b20ca;
+    font-weight: 600;
+}
+
+.table tbody tr:nth-child(even) {
+background-color: #98acf8;
+}
+.table tbody tr:nth-child(odd) {
+    background-color: #8794c9;
+}
+
+.users-icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px blue;
+    margin-bottom: 10px;
+}
+.all-users{
+    color: #0c056d;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px blue;
+}
+
+
+
+/* Footer */
+
+.footer-link-bar{
+    padding-top: 25px;
+    padding-bottom: 25px ;
+    min-width: 100%;
+}
+
+/* user-profile */
+
+#user-table{
+    box-shadow: 0px 0px 20px black;
+    margin-bottom: 40px;
+}
+
+#user-table td {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.user-profile-heading{
+    color: #0c056d;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px blue;
+}
+.user-profile-data-heading{
+color: black;
+}
+
+.user-profile-data-val {
+    color: rgb(51, 47, 47);
+}
+
+.userImage{
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgb(165, 102, 173);
+    width: 250px;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+
+/* user-history */
+
+.positive{
+    color: darkgreen;
+}
+.negative{
+    color: red;
+}
+
+.user-history-heading{
+    color: #0c056d;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-shadow: 0px 0px 15px blue;
+}
+
+#user-history-table{
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 20px black;
+}
+
+
+/* History */
+
+#history-table{
+    margin-bottom: 100px;
+    box-shadow: 0px 0px 20px black;
+}
+
+/* Success */
+
+
+.success{
+    background-color: rgb(240, 231, 231);
+    box-shadow: 0px 1px 20px black;
+    margin-bottom: 80px;
+    margin-top: 90px;
+}
+
+.success-para{
+    margin-bottom: 10px;
+}
+
+.success-heading{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.success-button{
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: rgb(8, 153, 8);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.success-button:hover {
+    background-color: green;
+}
+
+.check-icon{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+    margin-top: -50px;
+}
+
+
+
+
+/* other-details */
+
+.other-details{
+    margin-bottom: 60px;
+}
+
+.other-details h1{
+    font-size: 1.3rem;
+    color: rgb(43, 40, 40);
+    font-weight: bold;
+}
+
+.text{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding:20px 20px;
+    color: rgb(82, 77, 77);
+    background-color: rgb(228, 218, 218);
+    text-align: center;
+    box-shadow: 0px 1px 20px black;
+}
+
+.text:first-child {
+    margin-bottom: 18px;
+}
+
+.text:last-child {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.other-details a {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: rgb(82, 77, 77);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.other-details a:hover {
+    color: rgb(54, 52, 52);
+}
+
+
+
+.touch{
+    margin-top: 20px;
+}
+
+

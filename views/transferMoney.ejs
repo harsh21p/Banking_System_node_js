@@ -1,0 +1,54 @@
+<%- include("header") -%>
+
+
+<div class="transfer-money-form col-md-5">
+    <div class="row transferMoney">
+        <div class="col-2 center">
+            <i class="fas fa-exchange-alt"></i>
+        </div>
+        <div class="col-8 center">
+            <span class="center">Tranfer Money</span>
+        </div>
+        <div class="col-2 center">
+            <i class="fas fa-exchange-alt"></i>
+        </div>
+    </div>
+    
+    
+    <div class="center">
+        <p class="balance-display">Your current balance is Rs. <%= currentUserBalance %></p>
+    </div>
+
+    <form action="/success" method="POST">
+        <div class="form-group">
+            <label for="from">From</label>
+            <input class="form-control form-input-background" name="from" id="from" value="<%= currentUserName %>" readonly></input>
+        </div>
+
+        <div class="form-group">
+            <label for="to">To</label>
+            <select class="form-control form-input-background" name="to" id="to" required>
+                <option value="" disabled selected>Select another user</option>
+                <% users.forEach(function(user){%>
+                <%if(user !== currentUserName){%>
+                <option value="<%= user %>"><%= user %></option>
+                <%}%>
+                <%});%>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <label for="balance">Enter Amount</label>
+            <input class="form-control form-input-background" type="number" name="balance" id="balance" min="0" max="<%=currentUserBalance %>" required>
+        </div>
+
+        <div class="center" style="border-bottom: solid 2px lightgray;">
+            <button type="submit" class="form-submit-btn">Send</button>
+        </div>
+        <!-- <hr> -->
+    </form>
+</div>
+
+
+
+<%- include("footer") -%>

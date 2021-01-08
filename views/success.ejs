@@ -1,0 +1,14 @@
+<%- include("header") -%>
+<div class="center col-md-6 mx-md-auto ">
+    <div class="success">
+        <img class="check-icon" src="/images/check.jpg" alt="check">
+        <h1 class="success-heading">Transection Successfull!</h1>
+        <P class="success-para">You transfered Rs.<%= balance %> into account of
+            <%= anotherPerson%></P>
+        <p class="success-para">and your remaining balance is Rs.<%= remainingBalance %></p>
+        <!-- <button class="success-button"><a class="OK" href="/">OK</a></button> -->
+        <a class="OK" href="/"><button class="success-button">OK</button></a>
+    </div>
+</div>
+
+<%- include("footer")-%>

@@ -1,0 +1,61 @@
+<%- include("header") -%>
+
+<div class="center">
+
+    <h1 class="user-profile-heading">USER PROFILE</h1>
+
+    <% if(currentUser.gender == "Male"){ %>
+    <img class="userImage" src="/images/male.png" alt="male">
+    <% }else{ %>
+    <img class="userImage" src="/images/female.png" alt="female">
+    <% } %>
+
+</div>
+
+<div class="col-md-7 m-auto" >
+    <table class="table table-bordered table-responsive-sm " id="user-table">
+        <tr>
+            <td class="user-profile-data-heading ">Name</td>
+            <td class="user-profile-data-val "><%= currentUser.name%></td>
+        </tr>
+        <tr>
+            <td class="user-profile-data-heading ">Gender</td>
+            <td class="user-profile-data-val "><%= currentUser.gender %></td>
+        </tr>
+        <tr>
+            <td class="user-profile-data-heading ">Email</td>
+            <td class="user-profile-data-val "><%= currentUser.email %></td>
+        </tr>
+        <tr>
+            <td class="user-profile-data-heading ">Account Number</td>
+            <td class="user-profile-data-val "><%= currentUser.accountNumber %></td>
+        </tr>
+        <tr>
+            <td class="user-profile-data-heading ">Available Amount</td>
+            <td class="user-profile-data-val ">Rs.<%= currentUser.balance %></td>
+        </tr>
+        <tr>
+            <td class="user-profile-data-heading ">Phone</td>
+            <td class="user-profile-data-val ">+91<%= currentUser.phone %></td>
+        </tr>
+        <tr>
+            <td class="user-profile-data-heading ">Address</td>
+            <td class="user-profile-data-val "><%= currentUser.address %></td>
+        </tr>
+
+    </table>
+</div>
+
+<% let user = JSON.stringify(currentUser); %>
+
+<div class="col-md-7 m-auto center">
+    <form action="/transferMoney" method="POST">
+        <button class="transferMoney-button" type="submit" name="user" value="<%= user %>"> Transfer Money </button>
+    </form>
+    <form action="/user-history" method="POST">
+        <button type="submit" class="user-history-button" name="user" value="<%= user %>">Transection History</button>
+    </form>
+</div>
+
+
+<%- include("footer") -%>
