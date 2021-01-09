@@ -42,6 +42,10 @@ open your browser and search for a url localhost:8080
 
 ![Screenshot 2021-01-09 at 11 28 10 AM](https://user-images.githubusercontent.com/46632001/104084539-e281c380-526d-11eb-837a-49caddc01a16.png)
 
+![Screenshot 2021-01-09 at 11 31 39 AM](https://user-images.githubusercontent.com/46632001/104084571-4ad0a500-526e-11eb-80ff-2662afe1e60b.png)
+
+
+
 
 
 
