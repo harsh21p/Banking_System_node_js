@@ -2,13 +2,13 @@
 
 Host Link - https://simple-banking-systemharsh21-p.herokuapp.com
 
-This is the webpage (Task) of intenship at Spark Foundation for web development and web designing .
+This is the webpage (Task) of internship at Spark Foundation for web development and web designing .
 How to run the code ? :
 
 Step 1 :
 open terminal and clone the repository in your system :
 
-user Downlodads % git clone https://github.com/harsh21p/Spark_Foundation.git
+user Download % git clone https://github.com/harsh21p/Spark_Foundation.git
 
 Step 2 :
 
