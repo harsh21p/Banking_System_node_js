@@ -310,5 +310,5 @@ if (port == null || port == "") {
  
 
 app.listen(port, function () {
-    console.log("server has started successfully");
+    console.log("...Started. open given link in your browser - localhost:8080");
 });
