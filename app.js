@@ -12,7 +12,7 @@ app.use(express.static("public"))
 app.set("view engine", "ejs");
 
 
-mongoose.connect("mongodb+srv://harshad:harshad@cluster0.9nhrp.mongodb.net/databank?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://harshad:harshad@cluster0.9nhrp.mongodb.net/bank1?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false
