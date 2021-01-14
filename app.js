@@ -45,9 +45,9 @@ const userSchema = mongoose.Schema({
 
 const User = mongoose.model("User", userSchema);
 
-const defaultUserNames = ["Harshad Pachore", "Shivam Sable", "Shubham Pachore", "Siddhesh Gaykar", "Shrikant Rahane", "Sayli Sirsath", "kusum kamdh"];
-const defaultUsersEmail = ["hp21@gmail.com", "ss14@gmail.com", "sp10@gmail.com", "sg9@gmail.com", "sp123@gmail.com", "ss2@gmail.com", "kk@gmail.com"];
-const defaultUsersAddress = ["Shirdi, Maharashtra", "Pune, Maharashtra","Novha,  Asam", "Hederabad, Telangana", "Mehrauli, New Delhi","Shirdi, Maharashtra", "Mumbai, Maharashtra"];
+const defaultUserNames = ["Harshad Pachore", "Shivam Sable", "Shubham Pachore", "Siddhesh Gaykar", "Shrikant Rahane", "Sayli Sirsath", "kusum kamdh","Yash Mahajan","Sunil Pawar","Harsh Gudipudi"];
+const defaultUsersEmail = ["hp21@gmail.com", "ss14@gmail.com", "sp10@gmail.com", "sg9@gmail.com", "sp123@gmail.com", "ss2@gmail.com", "kk@gmail.com","ym21@gmail.com","sp21@gmail.com","hg@gmail.com"];
+const defaultUsersAddress = ["Shirdi, Maharashtra", "Pune, Maharashtra","Novha,  Asam", "Hederabad, Telangana", "Mehrauli, New Delhi","Shirdi, Maharashtra", "Mumbai, Maharashtra","Jalgaon, Maharashtra","Satara, Maharashatra","Mumbai, Maharashtra"];
 
 const defaultUsers = [];
 for (let i = 0; i < defaultUserNames.length; i++) {
