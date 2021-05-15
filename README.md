@@ -8,7 +8,7 @@ How to run the code ? :
 Step 1 :
 open terminal and clone the repository in your system :
 
-user Download % git clone https://github.com/harsh21p/Spark_Foundation.git
+user Download % git clone https://github.com/harsh21p/Banking_System_node_js.git
 
 Step 2 :
 
